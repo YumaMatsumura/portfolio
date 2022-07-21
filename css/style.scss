@@ -1,5 +1,6 @@
 $main_color: #000080;
 $hover_color: #4848A4;
+$text_color: #fff;
 
 /* header */
 header {
@@ -34,7 +35,7 @@ header nav ul li a {
   display: block;
   padding: 10px 0;
   text-decoration: none;
-  color: #fff;
+  color: $text_color;
   background-color: $main_color;
 }
 
@@ -48,12 +49,20 @@ header nav ul li a:hover {
 footer {
   padding-left: 15 px;
   text-align: center;
-  color: #fff;
+  color: $text_color;
   background-color: $main_color;
 }
 
 footer ul {
   list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: $text_color;
 }
 
 footer ul li a:hover {
